@@ -1,0 +1,130 @@
+// ------ Стили для хедера -------//
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header_nav {
+  display: flex;
+  align-items: center;
+}
+.header {
+  height: 80px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+  border-width: 1px;
+}
+.site-list__link {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--portfolio-main-color);
+  display: block;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
+}
+.portfolio-text-color {
+  color: var(--accent-color);
+}
+.current {
+  color: var(--accent-color);
+  position: relative;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    background-color: var(--accent-color);
+    bottom: -30px;
+  }
+}
+
+.current-portfolio {
+  position: relative;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    background-color: var(--accent-color);
+    bottom: -34px;
+  }
+}
+
+.border-header {
+  border-bottom: 1px solid #ececec;
+}
+.site-list {
+  @include font(14px, 500, 1.14, 0.02em);
+  color: hsl(0, 0%, 13%);
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  margin-left: 93px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.site-list .site-list__link {
+  margin-right: 50px;
+}
+.site-list .site-list__link :not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo-header {
+  color: var(--accent-color);
+}
+.site-list__logo-color {
+  color: var(--accent-color);
+}
+.contact-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+}
+.contact-list .site-list__link {
+  margin-right: 50px;
+}
+.contact-list .site-list__link :not(:last-child) {
+  margin-right: 50px;
+}
+.site-list__link {
+  @include font(14px, 500, 1.14, 0.02em);
+  text-decoration: none;
+  color: var(--main-text-color);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+.contact-list__icon {
+  margin-right: 10px;
+  align-items: center;
+}
+.contact-list__list {
+  display: flex;
+  align-items: center;
+}
+.icons-header {
+  fill: currentColor;
+}
+.icon-malito {
+  fill: solid #757575;
+}

@@ -1,0 +1,38 @@
+.work-card {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  flex-wrap: nowrap;
+}
+.work-section {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+.work-card__item {
+  display: block;
+  margin-right: 30px;
+}
+.work-card .work-card__item:last-child {
+  margin-right: 0px;
+}
+
+.work__wrap {
+  display: block;
+  position: relative;
+}
+.work__text {
+  font-family: 'Roboto';
+  @include font(14px, 700, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--main-batton-address-color);
+  padding: 27px 0;
+  width: 100%;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

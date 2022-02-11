@@ -1,0 +1,50 @@
+/*------Секция рода занятий нашей организации--*/
+.card-set {
+  display: flex;
+}
+
+.material__title {
+  @include font(14px, 700, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--main-name-text-color);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  padding: 0px;
+}
+
+.material__text {
+  line-height: 1.71;
+  font-style: Regular;
+  color: var(--main-text-color);
+  padding: 0px;
+  margin: 0px;
+}
+
+.material__item {
+  width: 270px;
+  &::before {
+    display: block;
+    height: 120px;
+    content: '';
+    background-color: var(--background-text-button-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+}
+
+.icon-antenna::before {
+  background-image: url(../../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../../images/clock.svg);
+}
+.icon-grafik::before {
+  background-image: url(../../images/diagram1.svg);
+}
+.icon-cosmic::before {
+  background-image: url(../../images/astronaut.svg);
+}

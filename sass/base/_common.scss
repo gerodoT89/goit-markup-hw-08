@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  background-color: var(--main-batton-address-color);
+}
+footer {
+  background-color: var(--footer-main-background-color);
+}
+.list {
+  list-style: none;
+}
+.invisible {
+  display: none;
+}

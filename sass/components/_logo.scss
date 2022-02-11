@@ -1,0 +1,29 @@
+//----- header logo -----//
+.logo {
+  font-family: Raleway, sans-serif;
+  @include font(26px, 700, 1.19, 0.03em);
+  text-decoration: none;
+  color: var(--webstudio-text-color);
+  margin-top: 24px;
+  margin-bottom: 25px;
+  display: flex;
+}
+.logo-header {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+//----footer logo ----//
+.footer-menu {
+  display: inline-block;
+}
+.footer__studio {
+  font-family: Raleway;
+  @include font(26px, 700, 1.17, 0.03em);
+  color: var(--main-batton-address-color);
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.footer-menu-list {
+  display: block;
+}

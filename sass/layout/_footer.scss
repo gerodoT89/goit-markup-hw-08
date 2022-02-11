@@ -1,0 +1,106 @@
+// ------ Настройки секции футер --------//
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.addres__footer-margin {
+  margin-top: 20px;
+}
+.footer-li-addres-section {
+  margin-bottom: 9px;
+}
+.address-list__contacts {
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 24px;
+  text-decoration: none;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
+}
+
+.address-list__link {
+  font-style: normal;
+  text-decoration: none;
+  line-height: 24px;
+  color: var(--main-batton-address-color);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.right-footer-container {
+  margin-left: 70px;
+}
+.right-footer-title {
+  font-family: 'Roboto', sans-serif;
+  @include font(14px, 700, 1.14, 0.03em);
+  color: var(--main-batton-address-color);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+.right-footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-footer__item {
+  justify-content: baseline;
+  margin-right: 10px;
+}
+.right-footer__link {
+  width: 44px;
+  height: 44px;
+  background-color: #44454e;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-content: center;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    background-color: var(--accent-color);
+  }
+}
+.right-footer__item:last-child {
+  margin-right: 0px;
+}
+.right-footer__icons {
+  fill: #ffffff;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.footer-menu {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.foter-addres-list {
+  padding-top: 20px;
+}
+.footer-border {
+  border-style: solid 1px #000000;
+  box-shadow: 0 4px 4px 0 #000000;
+}

@@ -1,0 +1,23 @@
+//----  Стиль кнопки ----//
+
+.button__style {
+  display: inline-block;
+  @include font(16px, 700, 1.87, 0.06em);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--main-batton-address-color);
+  text-align: center;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    background-color: #188ce8;
+  }
+}
