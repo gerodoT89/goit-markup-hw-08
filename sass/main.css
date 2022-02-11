@@ -85,23 +85,28 @@ footer {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
-  width: 480px;
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  width: 768px;
+  .container {
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  width: 1200px;
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -559,7 +564,7 @@ footer {
 }
 
 .current::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -574,7 +579,7 @@ footer {
 }
 
 .current-portfolio::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -688,14 +693,19 @@ footer {
 
 .hero {
   background-color: var(--footer-main-background-color);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.img.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.img.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/Hero_mob_1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero_mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
+  background-size: contain;
+  margin: auto;
+}
+
+@media (min-device-pixel-ratio: 2), (webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/Hero_mob_2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero_mob_2x.jpg);
+  }
 }
 
 .hero-title {
@@ -706,16 +716,16 @@ footer {
   text-align: center;
   text-transform: uppercase;
   color: var(--main-batton-address-color);
-  margin-right: auto;
-  margin-left: auto;
+  width: 360px;
+  height: 84px;
   margin-bottom: 30px;
   display: block;
 }
 
 .main-container {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .filter-list {

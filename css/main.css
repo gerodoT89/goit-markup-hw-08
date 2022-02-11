@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --main-text-color: #757575;
   --main-batton-address-color: #ffffff;
@@ -192,7 +191,7 @@ footer {
 
 .social__icons {
   fill: #afb1b8;
-  content: '';
+  content: "";
   background-repeat: no-repeat;
   margin-top: 12px;
   cursor: pointer;
@@ -227,7 +226,8 @@ footer {
   top: 50%;
   left: 50%;
   background-color: var(--main-batton-address-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
 }
@@ -468,7 +468,7 @@ footer {
 }
 
 .current::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -483,7 +483,7 @@ footer {
 }
 
 .current-portfolio::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -582,7 +582,11 @@ footer {
 
 .hero {
   background-color: var(--footer-main-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.img.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -690,7 +694,7 @@ footer {
 .material__item::before {
   display: block;
   height: 120px;
-  content: '';
+  content: "";
   background-color: var(--background-text-button-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -744,7 +748,7 @@ footer {
 }
 
 .work__text {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -773,7 +777,8 @@ footer {
 }
 
 .team__cards-shadow {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -829,7 +834,8 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__item:hover, .client__item:focus {
+.client__item:hover,
+.client__item:focus {
   border-color: var(--accent-color);
 }
 
@@ -925,7 +931,8 @@ footer {
 
 .project__link:hover,
 .project__link :focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project__text {
@@ -993,7 +1000,7 @@ footer {
 }
 
 .right-footer-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
