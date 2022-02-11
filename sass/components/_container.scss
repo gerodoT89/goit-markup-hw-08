@@ -4,4 +4,24 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin tel {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
 }

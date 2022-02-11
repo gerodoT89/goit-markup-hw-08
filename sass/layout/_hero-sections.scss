@@ -1,28 +1,40 @@
 // ------- Хиро секция -------//
 .hero {
   background-color: var(--footer-main-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero.img.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/hero.img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
+
 .hero-title {
-  @include font(44px, 900, 1.36, 0.06em);
+  @include font(26px, 900, 1.61, 0.06em);
   text-align: center;
   text-transform: uppercase;
   color: var(--main-batton-address-color);
-  width: 696px;
+  width: 360px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
   display: block;
+  @include desc {
+    @include font(44px, 900, 1.36, 0.06em);
+    width: 696px;
+  }
 }
 .main-container {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @include desc {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
