@@ -9,9 +9,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
+  // max-width: 1600px;
+  max-width: 480px;
+  // margin-right: auto;
+  // margin-left: auto;
 }
 
 .hero-title {
@@ -20,14 +21,15 @@
   text-transform: uppercase;
   color: var(--main-batton-address-color);
   width: 360px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 84px;
+  // margin-right: auto;
+  // margin-left: auto;
   margin-bottom: 30px;
   display: block;
-  @include desc {
-    @include font(44px, 900, 1.36, 0.06em);
-    width: 696px;
-  }
+  // @media desc {
+  //   @include font(44px, 900, 1.36, 0.06em);
+  //   width: 696px;
+  // }
 }
 .main-container {
   text-align: center;
