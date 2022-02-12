@@ -1,18 +1,28 @@
 /*------Секция рода занятий нашей организации--*/
 .card-set {
-  display: flex;
+  // display: flex;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
 }
 
 .material__title {
-  @include font(14px, 700, 1.14, 0.03em);
+  @include font(14px, 700, 1.17, 0.03em);
   text-transform: uppercase;
   color: var(--main-name-text-color);
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
   padding: 0px;
+  margin-bottom: 10px;
 }
 
 .material__text {
+  display: block;
+  left: 0px;
+  top: 0px;
   line-height: 1.71;
   font-style: Regular;
   color: var(--main-text-color);
@@ -21,30 +31,32 @@
 }
 
 .material__item {
-  width: 270px;
+  width: 450px;
+  display: block;
+
   &::before {
     display: block;
     height: 120px;
-    content: '';
+    content: "";
     background-color: var(--background-text-button-color);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
   }
-  &:not(:last-of-type) {
-    margin-right: 30px;
-  }
+  // &:not(:last-of-type) {
+  //   margin-right: 30px;
+  // }
 }
 
 .icon-antenna::before {
-  background-image: url(../../images/antenna.svg);
+  background-image: url(../images/antenna.svg);
 }
 .icon-clock::before {
-  background-image: url(../../images/clock.svg);
+  background-image: url(../images/clock.svg);
 }
 .icon-grafik::before {
-  background-image: url(../../images/diagram1.svg);
+  background-image: url(../images/diagram1.svg);
 }
 .icon-cosmic::before {
-  background-image: url(../../images/astronaut.svg);
+  background-image: url(../images/astronaut.svg);
 }

@@ -57,6 +57,12 @@ footer {
   display: none;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .checkbox {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -152,8 +158,15 @@ footer {
 }
 
 .material-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .material-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button__style {
@@ -603,37 +616,38 @@ footer {
 .hero {
   background-color: var(--footer-main-background-color);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 50%;
   background-size: cover;
   max-width: 1600px;
+  display: block;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero_mob_1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero_mob_1x.jpg);
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero_mob_2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero_mob_2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero_tab_1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero_tab_1x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero_tab_2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero_tab_2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.img.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     margin-right: auto;
@@ -643,7 +657,7 @@ footer {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero_desk_2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero_desk_2x.jpg);
   }
 }
 
@@ -655,7 +669,7 @@ footer {
   text-align: center;
   text-transform: uppercase;
   color: var(--main-batton-address-color);
-  max-width: 360px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
@@ -674,6 +688,7 @@ footer {
 .main-container {
   padding: 0;
   width: 100%;
+  height: auto;
 }
 
 .filter-list {
@@ -724,22 +739,31 @@ footer {
 
 /*------Секция рода занятий нашей организации--*/
 .card-set {
-  display: flex;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
 }
 
 .material__title {
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-name-text-color);
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
   padding: 0px;
+  margin-bottom: 10px;
 }
 
 .material__text {
+  display: block;
+  left: 0px;
+  top: 0px;
   line-height: 1.71;
   font-style: Regular;
   color: var(--main-text-color);
@@ -748,37 +772,34 @@ footer {
 }
 
 .material__item {
-  width: 270px;
+  width: 450px;
+  display: block;
 }
 
 .material__item::before {
   display: block;
   height: 120px;
-  content: '';
+  content: "";
   background-color: var(--background-text-button-color);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
 }
 
-.material__item:not(:last-of-type) {
-  margin-right: 30px;
-}
-
 .icon-antenna::before {
-  background-image: url(../../images/antenna.svg);
+  background-image: url(../images/antenna.svg);
 }
 
 .icon-clock::before {
-  background-image: url(../../images/clock.svg);
+  background-image: url(../images/clock.svg);
 }
 
 .icon-grafik::before {
-  background-image: url(../../images/diagram1.svg);
+  background-image: url(../images/diagram1.svg);
 }
 
 .icon-cosmic::before {
-  background-image: url(../../images/astronaut.svg);
+  background-image: url(../images/astronaut.svg);
 }
 
 .work-card {
