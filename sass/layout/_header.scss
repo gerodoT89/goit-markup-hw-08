@@ -13,8 +13,14 @@
   border-bottom-style: solid;
   border-bottom-color: #ececec;
   border-width: 1px;
+  @include tab {
+    height: 80px;
+  }
+  @include desk {
+    height: 80px;
+  }
 }
-// height: 80px;
+
 .site-list__link {
   font-weight: 500;
   line-height: 16px;
@@ -90,11 +96,14 @@
 }
 .contact-list {
   list-style: none;
-  display: flex;
-  align-items: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: auto;
+  align-items: flex-end;
+
+  @include desk {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: auto;
+  }
 }
 .contact-list .site-list__link {
   margin-right: 50px;

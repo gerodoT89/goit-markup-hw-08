@@ -1,11 +1,13 @@
 /*------Секция рода занятий нашей организации--*/
 .card-set {
-  // display: flex;
   display: block;
   max-width: 100%;
   height: auto;
   left: 0px;
   top: 0px;
+  @include desk {
+    display: flex;
+  }
 }
 
 .material__title {
@@ -17,12 +19,13 @@
   text-align: center;
   padding: 0px;
   margin-bottom: 10px;
+  @include desk {
+    @include font(14px, 700, 1.14, 0.03em);
+  }
 }
 
 .material__text {
   display: block;
-  left: 0px;
-  top: 0px;
   line-height: 1.71;
   font-style: Regular;
   color: var(--main-text-color);
@@ -33,7 +36,12 @@
 .material__item {
   width: 450px;
   display: block;
-
+  @include desk {
+    width: 270px;
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
   &::before {
     display: block;
     height: 120px;
@@ -43,9 +51,6 @@
     background-position: center;
     margin-bottom: 30px;
   }
-  // &:not(:last-of-type) {
-  //   margin-right: 30px;
-  // }
 }
 
 .icon-antenna::before {
