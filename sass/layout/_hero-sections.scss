@@ -1,20 +1,20 @@
 // ------- Хиро секция -------//
 .hero {
   background-color: var(--footer-main-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../../images/Hero_mob_1x.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  // max-width: 1600px;
-  margin: auto;
-  // margin-right: auto;
-  // margin-left: auto;
   @media (min-device-pixel-ratio: 2),
-    (webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(
@@ -23,6 +23,45 @@
       ),
       url(../../images/Hero_mob_2x.jpg);
   }
+
+  @include tab {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/Hero_tab_1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/Hero_tab_2x.jpg);
+    }
+  }
+
+  @include desk {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero.img.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/Hero_desk_2x.jpg);
+    }
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .hero-title {
@@ -30,19 +69,17 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--main-batton-address-color);
-  width: 360px;
-  height: 84px;
-  // margin-right: auto;
-  // margin-left: auto;
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
-  display: block;
-  // @media desc {
-  //   @include font(44px, 900, 1.36, 0.06em);
-  //   width: 696px;
-  // }
+
+  @include desk {
+    @include font(44px, 900, 1.36, 0.06em);
+    max-width: 696px;
+  }
 }
 .main-container {
-  text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 0;
+  width: 100%;
 }

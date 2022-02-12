@@ -7,6 +7,9 @@
 .work-section {
   padding-top: 0px;
   padding-bottom: 94px;
+  @media screen and(max-width:1199px) {
+    display: none;
+  }
 }
 .work-card__item {
   display: block;
@@ -21,7 +24,7 @@
   position: relative;
 }
 .work__text {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   @include font(14px, 700, 1.14, 0.03em);
   text-align: center;
   text-transform: uppercase;
