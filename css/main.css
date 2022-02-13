@@ -682,11 +682,20 @@ footer {
   font-weight: 900;
   line-height: 1.6;
   letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
   color: var(--main-batton-address-color);
   margin-right: auto;
   margin-left: auto;
+  margin-top: 0;
   margin-bottom: 30px;
-  max-width: 360px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -908,6 +917,7 @@ footer {
   box-shadow: 0 4px 4px 0 #ececec;
   background-color: #ffffff;
   height: 428px;
+  margin-bottom: 30px;
 }
 
 .team-set {
