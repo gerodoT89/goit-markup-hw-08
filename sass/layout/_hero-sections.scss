@@ -75,12 +75,12 @@
   margin-top: 0;
   margin-bottom: 30px;
   width: 100%;
-  @include tab {
+  @media screen and (min-width: 768px) {
     width: 360px;
   }
-  @include desk {
+  @media screen and (min-width: 1200px) {
     @include font(44px, 900, 1.36, 0.06em);
-    max-width: 696px;
+    width: 696px;
   }
 }
 // .main-container {

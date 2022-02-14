@@ -1,12 +1,19 @@
 /*------Секция рода занятий нашей организации--*/
 .card-set {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   left: 0px;
   top: 0px;
-  @include desk {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -19,7 +26,7 @@
   text-align: center;
   padding: 0px;
   margin-bottom: 10px;
-  @include desk {
+  @media screen and (min-width: 768px) {
     @include font(14px, 700, 1.14, 0.03em);
   }
 }
@@ -34,13 +41,14 @@
 }
 
 .material__item {
-  width: 450px;
-  display: block;
-  @include desk {
-    width: 270px;
-    &:not(:last-of-type) {
-      margin-right: 30px;
-    }
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
   }
   &::before {
     display: block;

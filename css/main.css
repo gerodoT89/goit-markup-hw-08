@@ -84,10 +84,10 @@ footer {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -155,6 +155,12 @@ footer {
   text-align: center;
   color: var(--portfolio-main-color);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
 }
 
 .material-section {
@@ -704,7 +710,7 @@ footer {
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    max-width: 696px;
+    width: 696px;
   }
 }
 
@@ -757,15 +763,25 @@ footer {
 /*------Секция рода занятий нашей организации--*/
 .card-set {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   left: 0px;
   top: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .card-set {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -783,7 +799,7 @@ footer {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .material__title {
     font-size: 14px;
     font-weight: 700;
@@ -802,16 +818,19 @@ footer {
 }
 
 .material__item {
-  width: 450px;
-  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .material__item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .material__item {
-    width: 270px;
-  }
-  .material__item:not(:last-of-type) {
-    margin-right: 30px;
+    width: calc((100% - 8 * 15px) / 4);
   }
 }
 
@@ -849,7 +868,7 @@ footer {
 }
 
 .work-section {
-  padding-top: 94px;
+  padding-top: 0px;
   padding-bottom: 94px;
 }
 

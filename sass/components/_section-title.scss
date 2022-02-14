@@ -4,4 +4,7 @@
   text-align: center;
   color: var(--portfolio-main-color);
   margin-bottom: 30px;
+  @include desk {
+    margin-bottom: 50px;
+  }
 }
