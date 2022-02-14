@@ -577,7 +577,13 @@ footer {
   position: absolute;
   left: 0;
   background-color: var(--accent-color);
-  bottom: -30px;
+  bottom: -32px;
+}
+
+@media screen and (min-width: 1200px) {
+  .current::after {
+    bottom: -30px;
+  }
 }
 
 .current-portfolio {
@@ -592,7 +598,7 @@ footer {
   position: absolute;
   left: 0;
   background-color: var(--accent-color);
-  bottom: -34px;
+  bottom: -44px;
 }
 
 .border-header {
@@ -611,6 +617,12 @@ footer {
   margin-left: 93px;
   margin-bottom: 32px;
   margin-top: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .site-list {
+    display: none;
+  }
 }
 
 .site-list .site-list__link {
@@ -634,21 +646,31 @@ footer {
   align-items: flex-end;
 }
 
+@media screen and (max-width: 479px) {
+  .contact-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .contact-list {
+    flex-direction: column;
+    align-content: flex-end;
+    margin-right: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contact-list {
     display: flex;
     margin-top: 32px;
     margin-bottom: 32px;
     margin-left: auto;
+    margin-right: 50px;
   }
-}
-
-.contact-list .site-list__link {
-  margin-right: 50px;
-}
-
-.contact-list .site-list__link :not(:last-child) {
-  margin-right: 50px;
+  .contact-list:not(:last-child) {
+    margin-right: 0px;
+  }
 }
 
 .site-list__link {
@@ -661,12 +683,22 @@ footer {
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 10px;
 }
 
 .site-list__link:hover,
 .site-list__link :focus {
   fill: var(--accent-color);
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .site-list__link {
+    margin-right: 50px;
+  }
+  .site-list__link:not(:last-child) {
+    margin-right: 0px;
+  }
 }
 
 .contact-list__icon {
