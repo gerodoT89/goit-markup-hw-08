@@ -1,10 +1,16 @@
 //--- Оформление кнопок меню портфолио ---//
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  list-style: none;
+  flex-basis: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    list-style: none;
+  }
 }
+
 .filter__item {
   display: list-item;
   margin-right: 8px;

@@ -72,15 +72,66 @@ footer {
 }
 
 .portfolio-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: block;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .project__item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
+  width: 100%;
   margin-bottom: 30px;
+}
+
+.project__item:last-of-type {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 479px) {
+  .project__item:ntn-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project__item {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+  }
+  .project__item:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .project__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .project__item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
 .container {
@@ -716,9 +767,16 @@ footer {
 
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  list-style: none;
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    list-style: none;
+  }
 }
 
 .filter__item {
@@ -811,7 +869,7 @@ footer {
 .material__text {
   display: block;
   line-height: 1.71;
-  font-style: Regular;
+  font-style: normal;
   color: var(--main-text-color);
   padding: 0px;
   margin: 0px;
@@ -821,9 +879,17 @@ footer {
   width: 100%;
 }
 
+@media screen and (max-width: 479px) {
+  .material__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .material__item {
     width: calc((100% - 4 * 15px) / 2);
+  }
+  .material__item:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 }
@@ -1010,14 +1076,6 @@ footer {
   color: var(--portfolio-main-color);
   text-decoration: none;
   margin-bottom: 4px;
-}
-
-.project__item:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.project__item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
 }
 
 .project-content-size {

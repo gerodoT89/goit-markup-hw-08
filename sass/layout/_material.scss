@@ -34,7 +34,7 @@
 .material__text {
   display: block;
   line-height: 1.71;
-  font-style: Regular;
+  font-style: normal;
   color: var(--main-text-color);
   padding: 0px;
   margin: 0px;
@@ -42,10 +42,16 @@
 
 .material__item {
   width: 100%;
-
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
-    margin-bottom: 30px;
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
   }
   @media screen and (min-width: 1200px) {
     width: calc((100% - 8 * 15px) / 4);
