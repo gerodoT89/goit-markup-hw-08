@@ -12,18 +12,45 @@
 }
 .team__item {
   display: block;
-  align-content: center;
-  margin-bottom: 30px;
+  // align-content: center;
+  // margin-bottom: 30px;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   box-shadow: 0 4px 4px 0 #ececec;
   background-color: #ffffff;
-  height: 428px;
-  margin-bottom: 30px;
+  // height: 428px;
+  // margin-bottom: 30px;
+  @media screen and (min-width: 479px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 120px) / 4);
+      margin-bottom: 0px;
+      align-content: center;
+    }
+  }
 }
 .team-set {
   display: block;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 // .team_img-content {
 //   align-content: center;

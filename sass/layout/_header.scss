@@ -13,10 +13,10 @@
   border-bottom-style: solid;
   border-bottom-color: #ececec;
   border-width: 1px;
-  @include tab {
+  @media screen and (min-width: 768px) {
     height: 80px;
   }
-  @include desk {
+  @media screen and (min-width: 1200px) {
     height: 80px;
   }
 }
