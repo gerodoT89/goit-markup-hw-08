@@ -741,6 +741,7 @@ footer {
 }
 
 .menu-open__icon {
+  color: var(--portfolio-main-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -818,7 +819,7 @@ footer {
   letter-spacing: 0.02em;
   color: var(--portfolio-main-color);
   text-decoration: none;
-  transition-property: color, background-color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -894,7 +895,7 @@ footer {
 
 .mob-social__link {
   color: var(--accent-color);
-  transition-property: color, background-color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
