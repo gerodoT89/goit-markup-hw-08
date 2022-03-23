@@ -256,6 +256,7 @@
 .mob-menu__link {
   @include font(40px, 500, 1.7, 0.02em);
   color: var(--portfolio-main-color);
+  text-decoration: none;
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -279,6 +280,7 @@
 .mob-tel__link {
   @include font(34px, 500, 1.17, 0.02em);
   color: var(--accent-color);
+  text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -292,6 +294,8 @@
   @include font(24px, 500, 1.16, 0.02em);
   display: block;
   margin-bottom: 64px;
+  text-decoration: none;
+  color: var(--main-text-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
