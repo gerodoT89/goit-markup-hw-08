@@ -4,6 +4,11 @@
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .client__item {
@@ -22,9 +27,14 @@
   &:focus {
     border-color: var(--accent-color);
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    flex-basis: 50%;
+  @media screen and (max-width: 480px) {
+    // flex-wrap: nowrap;
+    // flex-basis: 50%;
     margin-bottom: 30px;
+    margin-right: auto;
+    width: 210px;
+    height: 92px;
+    
   }
 }
 // .client__item:last-child {

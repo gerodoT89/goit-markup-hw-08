@@ -44,6 +44,11 @@
 .footer-container {
   display: flex;
   align-items: baseline;
+  @media screen and (max-width: 480px) {
+      align-content: center;
+      justify-content: center;
+      display: block;
+    }
 }
 .right-footer-container {
   margin-left: 70px;
@@ -103,4 +108,13 @@
 .footer-border {
   border-style: solid 1px #000000;
   box-shadow: 0 4px 4px 0 #000000;
+}
+
+
+.mobile-container {
+  // @media screen and (max-width: 480px) {
+  //   align-content: center;
+  //   justify-content: center;
+    
+  // }
 }
