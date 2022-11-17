@@ -1290,7 +1290,7 @@ footer {
   .client-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
@@ -1310,7 +1310,6 @@ footer {
 @media screen and (max-width: 480px) {
   .client__item {
     margin-bottom: 30px;
-    margin-right: auto;
     width: 210px;
     height: 92px;
   }
