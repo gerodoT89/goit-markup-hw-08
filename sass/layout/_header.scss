@@ -205,7 +205,8 @@
   height: 100vh;
   z-index: 1;
   height: 100%;
-  display: flex;
+  // display: flex;
+  display: block;
   flex-direction: column;
   transition: left 500ms, visibility 500ms;
 }
@@ -252,6 +253,7 @@
 }
 .mob-menu__list {
   display: inline-block;
+  // margin-bottom: 302px;
 }
 
 .mob-menu__link {
@@ -275,7 +277,7 @@
 }
 
 .mob-contact-bottom {
-  margin-top: auto;
+  margin-top: 302px;
 }
 
 .mob-tel__link {
@@ -308,9 +310,12 @@
 
 .mob-social__list {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: -20px;
-  margin-left: -20px;
+  // flex-wrap: wrap;
+  // margin-top: -20px;
+  // margin-left: -20px;
+  justify-content: center;
+  text-align: center;
+  margin-right: 83px;
 }
 
 .mob-social__item:not(:last-child)::after {
@@ -326,6 +331,7 @@
   position: relative;
   margin-top: 20px;
   margin-left: 20px;
+  margin-right: 10px;
 }
 
 .mob-social__link {

@@ -137,7 +137,7 @@ footer {
   margin-right: auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
     padding-left: 15px;
@@ -194,6 +194,8 @@ footer {
 
 .footer-menu-list {
   display: block;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .section__title {
@@ -483,9 +485,10 @@ footer {
 
 .footer__input {
   height: 50px;
-  min-width: 358px;
+  width: 450px;
   padding: 0 15px;
   margin-right: 12px;
+  margin-bottom: 20px;
   outline: none;
   font-size: 16px;
   line-height: 1.25;
@@ -764,7 +767,7 @@ footer {
   height: 100vh;
   z-index: 1;
   height: 100%;
-  display: flex;
+  display: block;
   flex-direction: column;
   transition: left 500ms, visibility 500ms;
 }
@@ -836,7 +839,7 @@ footer {
 }
 
 .mob-contact-bottom {
-  margin-top: auto;
+  margin-top: 302px;
 }
 
 .mob-tel__link {
@@ -875,9 +878,9 @@ footer {
 
 .mob-social__list {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: -20px;
-  margin-left: -20px;
+  justify-content: center;
+  text-align: center;
+  margin-right: 83px;
 }
 
 .mob-social__item:not(:last-child)::after {
@@ -893,6 +896,7 @@ footer {
   position: relative;
   margin-top: 20px;
   margin-left: 20px;
+  margin-right: 10px;
 }
 
 .mob-social__link {
@@ -1454,30 +1458,23 @@ footer {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-@media screen and (max-width: 480px) {
-  .footer-container {
-    align-content: center;
-    justify-content: center;
-    display: block;
-  }
+  display: block;
+  justify-content: center;
 }
 
 .right-footer-container {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  justify-content: center;
 }
 
 .right-footer-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--main-batton-address-color);
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
   display: block;
@@ -1535,5 +1532,10 @@ footer {
 .footer-border {
   border-style: solid 1px #000000;
   box-shadow: 0 4px 4px 0 #000000;
+}
+
+.footer-con-item {
+  display: block;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
