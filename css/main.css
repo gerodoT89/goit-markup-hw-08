@@ -316,6 +316,8 @@ footer {
   padding: 40px;
   top: 50%;
   left: 50%;
+  width: 450px;
+  height: 609px;
   background-color: var(--main-batton-address-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -803,14 +805,11 @@ footer {
 }
 
 .menu-close__icon {
+  width: 18.67px;
+  height: 18.67px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-close__icon {
-  width: 40px;
-  height: 40px;
 }
 
 .mob-menu__list {

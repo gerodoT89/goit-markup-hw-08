@@ -18,6 +18,8 @@
   padding: 40px;
   top: 50%;
   left: 50%;
+  width: 450px;
+  height: 609px;
   background-color: var(--main-batton-address-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -133,6 +135,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  //   width: 370px;
+  //   height: 15px;
 }
 
 .checkbox__icon {
@@ -192,6 +196,7 @@
   display: inline-flex;
   align-items: center;
 }
+
 .icon-send-btn {
   margin-left: 10px;
 }
