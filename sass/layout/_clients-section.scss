@@ -6,11 +6,10 @@
   justify-content: space-between;
   width: 100%;
   height: auto;
-  // @media screen and (max-width: 480px) {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  // }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .client__item {
@@ -32,6 +31,11 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+    margin-bottom: 0px;
   }
 }
 

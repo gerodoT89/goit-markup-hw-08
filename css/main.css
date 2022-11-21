@@ -202,6 +202,13 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-menu-list {
+    margin-bottom: 0px;
+    text-align: left;
+  }
+}
+
 .section__title {
   font-size: 28px;
   font-weight: 700;
@@ -510,6 +517,12 @@ footer {
 .footer__input:hover,
 .footer__input :focus {
   border-color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
 }
 
 .btn-send {
@@ -1049,6 +1062,12 @@ footer {
   margin-top: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .filter__btm-break {
+    margin-top: 0px;
+  }
+}
+
 /*------Секция рода занятий нашей организации--*/
 .card-set {
   display: block;
@@ -1247,7 +1266,6 @@ footer {
 @media screen and (min-width: 480px) and (min-width: 1200px) {
   .team__item {
     width: calc((100% - 120px) / 4);
-    margin-bottom: 0px;
     align-content: center;
   }
 }
@@ -1301,6 +1319,13 @@ footer {
   height: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .client-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .client__item {
   margin-bottom: 30px;
   width: 210px;
@@ -1315,6 +1340,14 @@ footer {
 
 .client__item:hover, .client__item:focus {
   border-color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .client__item {
+    width: 170px;
+    height: 92px;
+    margin-bottom: 0px;
+  }
 }
 
 .client__item:nth-child(n + 5) {
@@ -1361,6 +1394,12 @@ footer {
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-top-style: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tehno__kostul {
+    padding-bottom: 55px;
+  }
 }
 
 .project__item-wrap {
@@ -1414,6 +1453,13 @@ footer {
 .footer {
   padding-bottom: 60px;
   padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .address-list__item:not(:last-child) {
@@ -1471,6 +1517,13 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .right-footer-container {
   margin-bottom: 60px;
   justify-content: center;
@@ -1479,6 +1532,12 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .right-footer-container {
     margin-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .right-footer-container {
+    margin-left: 70px;
   }
 }
 
@@ -1493,6 +1552,12 @@ footer {
   text-transform: uppercase;
   margin-bottom: 20px;
   display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .right-footer-title {
+    text-align: left;
+  }
 }
 
 .right-footer__list {
@@ -1552,5 +1617,13 @@ footer {
 .footer-con-item {
   display: block;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .element-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

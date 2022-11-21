@@ -34,14 +34,8 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 76px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    text-align: left;
+  }
 }
-
-// .footer-tab-menu {
-//   @media and (min-width: 480px) {
-//     display: none;
-//   }
-//   @media screen and (min-width: 768px) and (max-width: 1200px) {
-//   }
-//   display: flex;
-//   justify-content: space-between;
-// }

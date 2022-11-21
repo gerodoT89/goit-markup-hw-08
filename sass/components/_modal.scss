@@ -171,7 +171,7 @@
 
 .footer__input {
   height: 50px;
-  // min-width: 358px;
+
   width: 450px;
   padding: 0 15px;
   margin-right: 12px;
@@ -189,6 +189,9 @@
   &:hover,
   :focus {
     border-color: var(--accent-color);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 
