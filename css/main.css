@@ -196,6 +196,12 @@ footer {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-menu-list {
+    margin-left: 76px;
+  }
+}
+
 .section__title {
   font-size: 28px;
   font-weight: 700;
@@ -926,13 +932,13 @@ footer {
   }
 }
 
-@media screen and (min-width: 489px) {
+@media screen and (min-width: 480px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-tab-1x.jpg);
   }
 }
 
-@media screen and (min-width: 489px) and (min-device-pixel-ratio: 2), screen and (min-width: 489px) and (min-resolution: 192dpi), screen and (min-width: 489px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-tab-2x.jpg);
   }
@@ -1458,9 +1464,22 @@ footer {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .right-footer-container {
   margin-bottom: 60px;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .right-footer-container {
+    margin-right: 89px;
+  }
 }
 
 .right-footer-title {
