@@ -1,7 +1,9 @@
 //--- Оформление кнопок меню портфолио ---//
 .filter-list {
   display: flex;
-  flex-basis: 100%;
+  // flex-basis: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -16,6 +18,7 @@
   margin-right: 8px;
   list-style: none;
 }
+
 .filter__btn {
   display: list-item;
   font-family: inherit;
@@ -42,4 +45,8 @@
 }
 .filter__item .filter-list:last-child {
   margin-right: 0px;
+}
+
+.filter__btm-break {
+  margin-top: 15px;
 }
