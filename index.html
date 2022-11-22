@@ -218,12 +218,27 @@
           </h2>
           <ul class="team-set list">
             <li class="team__item">
-              <img
-                srcset="сюда вписываем картинки нужн. раз-ров"
-                src="./images/igor25.jpg"
+              <picture>
+                <source
+                  srcset="./images/team-1_d_2x.jpg   2x"
+                  media="(min-width: 1200px)"
+                  />
+                <source
+                  srcset="./images/team-1_t_1x.jpg   1x,
+                          ./images/team-1_t_2x.jpg   2x"
+                          media="(min-width: 768px)"
+                          />
+                <source
+                  srcset="./images/team-1_m_1x.jpg   1x, 
+                          ./images/team-1_m_2x.jpg  2x"
+                          media="(min-width: 480px)"
+                          />
+                <img
+                src="./images/ihor_orig.jpg"
                 alt="Игорь Демьяненко"
-                width="450"
+                
               />
+              </picture>
               <div class="team__img team__cards-shadow">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__profession">Product Designer</p>
@@ -260,8 +275,27 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/olga25.jpg" alt="Ольга Репина" width="450" />
-              <div class="team__img team__cards-shadow">
+                <picture>
+                <source
+                  srcset="./images/team-2_d_2x.jpg   2x"
+                  media="(min-width: 1200px)"
+                  />
+                <source
+                  srcset="./images/team-2_t_1x.jpg   1x,
+                          ./images/team-2_t_2x.jpg   2x"
+                          media="(min-width: 768px)"
+                          />
+                <source
+                  srcset="./images/team-2_m_1x.jpg   1x, 
+                          ./images/team-2_m_2x.jpg  2x"
+                          media="(min-width: 480px)"
+                          />
+                <img
+                src="./images/olga_orig.jpg"
+                alt="Ольга"
+                />
+              </picture>
+                <div class="team__img team__cards-shadow">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__profession">Frontend Developer</p>
                 <ul class="social list">
@@ -297,11 +331,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/nicola25.jpg"
-                alt="Николай Тарасов"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="./images/team-3_d_2x.jpg   2x"
+                  media="(min-width: 1200px)"
+                  />
+                <source
+                  srcset="./images/team-3_t_1x.jpg   1x,
+                          ./images/team-3_t_2x.jpg   2x"
+                          media="(min-width: 768px)"
+                          />
+                <source
+                  srcset="./images/team-3_m_1x.jpg   1x, 
+                          ./images/team-3_m_2x.jpg  2x"
+                          media="(min-width: 480px)"
+                          />
+                <img
+                src="./images/nikola_orig.jpg"
+                alt="Микола"
+                />
+              </picture>
               <div class="team__img team__cards-shadow">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__profession">Marketing</p>
@@ -338,7 +387,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/miha25.jpg" alt="Михаил Ермаков" width="450" />
+              <picture>
+                <source
+                  srcset="./images/team-4_d_2x.jpg   2x"
+                  media="(min-width: 1200px)"
+                  />
+                <source
+                  srcset="./images/team-4_t_1x.jpg   1x,
+                          ./images/team-4_t_2x.jpg   2x"
+                          media="(min-width: 768px)"
+                          />
+                <source
+                  srcset="./images/team-4_m_1x.jpg   1x, 
+                          ./images/team-4_m_2x.jpg  2x"
+                          media="(min-width: 480px)"
+                          />
+                <img
+                src="./images/miko_orig.jpg"
+                alt="Миха"
+                />
+              </picture>
               <div class="team__img team__cards-shadow">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__profession">UI Designer</p>
