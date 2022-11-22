@@ -1396,12 +1396,6 @@ footer {
   border-top-style: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tehno__kostul {
-    padding-bottom: 24px;
-  }
-}
-
 .project__item-wrap {
   position: relative;
   overflow: hidden;
