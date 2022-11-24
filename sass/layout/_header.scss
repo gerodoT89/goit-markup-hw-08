@@ -166,6 +166,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: auto;
+  width: 40px;
+  height: 40px;
   @media screen and (min-width: 767px) {
     display: none;
   }
@@ -184,6 +186,7 @@
 }
 
 .menu-open__icon {
+  align-items: center;
   color: var(--main-text-color);
   transition-property: color;
   transition-duration: 250ms;
@@ -192,7 +195,7 @@
 
 .menu-open__icon {
   width: 40px;
-  height: 40px;
+  height: 16px;
 }
 
 .mob-menu {
@@ -201,12 +204,12 @@
   padding: 48px 40px;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+
   z-index: 1;
   height: 100%;
-  // display: flex;
-  display: block;
+  display: flex;
+
   flex-direction: column;
   transition: left 500ms, visibility 500ms;
 }
@@ -276,7 +279,7 @@
 }
 
 .mob-contact-bottom {
-  margin-top: 302px;
+  margin-top: auto;
 }
 
 .mob-tel__link {
@@ -309,12 +312,9 @@
 
 .mob-social__list {
   display: flex;
-  // flex-wrap: wrap;
-  // margin-top: -20px;
-  // margin-left: -20px;
+  position: fixed;
   justify-content: center;
   text-align: center;
-  margin-right: 83px;
 }
 
 .mob-social__item:not(:last-child)::after {
@@ -328,9 +328,12 @@
 
 .mob-social__item {
   position: relative;
-  margin-top: 20px;
-  margin-left: 20px;
   margin-right: 10px;
+  margin-left: 10px;
+}
+
+.mob-social__item:first-child {
+  margin-left: 0px;
 }
 
 .mob-social__link {
@@ -342,4 +345,9 @@
   &:focus {
     color: var(--portfolio-main-color);
   }
+  text-decoration: none;
+}
+
+.mob-menu__link .site-list__logo-color {
+  color: #2196f3;
 }
