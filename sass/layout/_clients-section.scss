@@ -8,7 +8,7 @@
   // height: auto;
   @media screen and (min-width: 450px) {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
   }
 }
 
@@ -25,6 +25,17 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+  }
+  .client__link:hover &,
+  .client__link:focus & {
+    fill: var(--accent-color);
+  }
+  @media screen and (min-width: 450px) and (max-width: 767px) {
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    margin-bottom: 0px;
   }
   @media screen and (min-width: 1200px) {
     width: 170px;
