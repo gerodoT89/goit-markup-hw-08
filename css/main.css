@@ -1563,7 +1563,6 @@ footer {
 
 .right-footer-container {
   margin-bottom: 60px;
-  justify-content: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1575,6 +1574,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .right-footer-container {
     margin-left: 70px;
+    margin-bottom: 0px;
   }
 }
 
