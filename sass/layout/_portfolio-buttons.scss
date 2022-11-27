@@ -1,10 +1,10 @@
 //--- Оформление кнопок меню портфолио ---//
 .filter-list {
   display: flex;
-  // flex-basis: 100%;
   flex-wrap: wrap;
   margin-bottom: 40px;
-
+  gap: 8px;
+  row-gap: 15px;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@
 
 .filter__item {
   display: list-item;
-  margin-right: 8px;
+
   list-style: none;
 }
 
@@ -29,18 +29,20 @@
   text-decoration: none;
   cursor: pointer;
   border: none;
+  letter-spacing: 0.03em;
   border-radius: 4px;
-  padding: 6px 20px;
+  padding: 6px 22px;
   background: var(--background-text-button-color);
   transition-property: color, background-color;
-  transition-duration: 250ms;
+  transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   :focus {
     background-color: #188ce8;
     color: var(--main-batton-address-color);
     cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
 .filter__item .filter-list:last-child {
@@ -48,7 +50,6 @@
 }
 
 .filter__btm-break {
-  margin-top: 15px;
   @media screen and (min-width: 768px) {
     margin-top: 0px;
   }

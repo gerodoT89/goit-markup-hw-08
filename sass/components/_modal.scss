@@ -32,6 +32,10 @@
     max-height: 609px;
     overflow: scroll;
   }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__close {
   position: absolute;
@@ -216,4 +220,9 @@
 
 .icon-send-btn {
   margin-left: 10px;
+}
+
+/* колір кнопки модалки */
+.span-title {
+  color: #757575;
 }
